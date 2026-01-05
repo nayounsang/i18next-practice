@@ -11,6 +11,7 @@
 - react-i18next 생태계를 이용합니다.
 - 런타임에서, 다국어 리소스 파일을 불러옵니다.
 - `i18next-http-backend`의 `Backend` 플러그인으로 구현했습니다. `loadPath`옵션에 적절한 backend api end point를 지정합니다.
+- `i18n.changeLanguage`를 이용해 로케일 변경 후 (리소스 통한) 언어 적용이 가능합니다. Promise를 반환하므로, 적용 완료에 따른 로딩 상태 컨트롤이 가능합니다. (* 이를 위해 서버에서 고의적으로 2초의 지연이 발생하도록 했습니다.)
 
 ## 구조
 
